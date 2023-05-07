@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geocoding and geolocation</title>
+  <script type="module" src="demo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1> Geocoding </h1>
+  </header>
+
+  <!-- Section 1 - main input form -->
+  <section aria-label="User input form">
+  <form id="locationInput">
+    <h2> Please enter a valid address </h2>
+    <input type="text" name="locationSearch"/>
+    <button type="submit">Submit address</button>
+  </form>
+  <button type="submit" id="generateMap">Generate map</button>
+  </section>
+
+  <!-- Section 2 - map -->
+  <iframe
+  id="map"
+  title="map"
+  width="300"
+  height="200"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.14703,51.50462,-0.13543,51.50957">
+  </iframe>
+
+  <footer>
+  </footer>
+
+</body>
+</html>
+
