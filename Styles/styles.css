@@ -1,0 +1,50 @@
+/* Best practice */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark light;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+  
+html:focus-within {
+  scroll-behavior: smooth;
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Personalised fonts */
+.personalFont {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+/* Hyperlinks */
+a {
+  color: inherit;
+  text-decoration: none;    
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Buttons' styling */
+.btn *,
+button * {
+  pointer-events: null;
+  user-select: none;
+}
+  
