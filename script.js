@@ -1,5 +1,5 @@
 // GEOLOCATION API PROJECT
-// V. 2
+// V. 3
 
 // Get data from user and save to local storage
 document.addEventListener("submit", (event) => {
@@ -45,6 +45,11 @@ document.addEventListener("submit", (event) => {
 
     }
     getLocation();
+
+    // Other functions
+    let locationAnswer = JSON.parse(window.localStorage.getItem("locationOutput")); // Get data set from local storage, from string into data object
+    let latitude = locationAnswer.lat;
+    let longitude = locationAnswer.lon;
 
     localStorage.clear;
 
